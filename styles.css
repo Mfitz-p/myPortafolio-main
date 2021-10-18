@@ -71,6 +71,9 @@ header{
      color: var(--texto-black);
      font-weight: lighter;
  }
+ .color-purple {
+     color: var(--fuente-purple);
+ }
  .main-section-container 
  .backgroundImg {
      width: 80rem;
@@ -78,10 +81,14 @@ header{
      margin: 0 auto;
      margin-bottom: 35px;
      border-radius: 5px;
-     background-image: url('./assets/imagenes/main_section.png');
+     box-shadow: 3px 6px 9px 3px rgba(171,171,171,0.79);
+    -webkit-box-shadow: 3px 6px 9px 3px rgba(171,171,171,0.79);
+    -moz-box-shadow: 3px 6px 9px 3px rgba(171,171,171,0.79);
+     background-image: url('./assets/imagenes/ms-mf-img.jpg');
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
+     
  }
  .main-section-container 
  .button {
@@ -89,7 +96,9 @@ header{
     padding: 15px;
     background-color: var(--button-purple-ligth);
     /*Sombras*/
-    box-shadow: 0px 3px 8px rgba(white, white, grey alpha);
+    box-shadow: 4px 8px 9px 3px rgba(209, 195, 215, 0.762);
+    -webkit-box-shadow: 4px 8px 9px 3px rgba(220,208,208,0.79);
+    -moz-box-shadow: 4px 8px 9px 3px rgba(220,208,208,0.79);
     border: none;
     border-radius: 5px;
     font-size: 1.5rem;
@@ -101,7 +110,9 @@ header{
  /*About Me*/
 .container-section-aboutme {
     display: flex;
-    margin-left: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10rem;
     margin-bottom: 10rem;
     width: 100%;
     height: auto;
@@ -125,14 +136,19 @@ header{
     margin: 0 8rem;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-image: url('./assets/imagenes/about-me.png');
+    background-image: url('./assets/imagenes/martha-sinfondo.png');
     background-size: cover; 
+    box-shadow: 3px 6px 9px 3px rgba(171,171,171,0.79);
+    -webkit-box-shadow: 3px 6px 9px 3px rgba(171,171,171,0.79);
+    -moz-box-shadow: 3px 6px 9px 3px rgba(171,171,171,0.79);
+
 }
 
 /*Sección Contacto*/
 .section-contact {
     display: flex;
-    margin-left: 20rem;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 5rem;
     width: 100%;
     height: auto;
@@ -182,13 +198,16 @@ li textarea {
     border: 1px solid #6C63FF;
     border-radius: 5px; 
     font-size: 15px;
+    font-family: sans-serif;
 }
 .button-enviar {
     margin-bottom: 3rem;
     padding: 10px;
     background-color: var(--button-purple-ligth);
     /*Sombras*/
-    box-shadow: 0px 3px 8px rgba(white, white, grey alpha);
+    box-shadow: 4px 8px 9px 3px rgba(209, 195, 215, 0.762);
+    -webkit-box-shadow: 4px 8px 9px 3px rgba(220,208,208,0.79);
+    -moz-box-shadow: 4px 8px 9px 3px rgba(220,208,208,0.79);
     border: none;
     border-radius: 5px;
     font-size: 1.5rem;
@@ -205,32 +224,33 @@ li textarea {
 
 /*Footer*/
 footer {
+    display: flex;
     width: 100vw;
     height: 9rem;
     background-color: var(--footer-grey);
+    justify-content: space-between;
+    align-items: center;
 }
 .container-icons {
-    padding-top: 30px;
     font-size: 2rem;
     display: flex;
-    float: right;
     background-color: var(--footer-grey);
 }
 .logo-footer {
     margin-left: 50px;
     width: 5rem;
-    height: 6rem;
-    float: left; 
+    height: 6rem; 
 }
 .icons li {
     padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
     list-style: none;
     display: inline-block;
 }
 .icons li a {
     color: var(--texto-black);
     display: block;
-    padding: 10px;
     text-decoration: none;    
 }
 .icons .github a {
